@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sorting Visualizer</title>
-
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+  <!-- <link rel="stylesheet" href="./bootstrap/bootstrap.css"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -23,8 +24,9 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav algos">
+        <ul class="navbar-nav algos text-center">
           <li class="nav-item mr-2">
             <button class="nav-link">Bubble</button>
           </li>
@@ -45,12 +47,12 @@
     </nav>
   </header>
 
+
   <section>
     <div class="array-inputs">
       <div class="d-inline mr-2">
         <label for="customRange2">Size of Array</label>
         <input type="range" class="custom-range" min=20 max=200 id="arr-size" step="1" value="80">
-        <!-- <input id="arr-size" class="custom-range" type="range" min="20" max="150" step="1" value="80"> -->
       </div>
 
       <div class="d-inline mr-2">
@@ -78,7 +80,9 @@
 
 
   <!-- scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <!-- <script src="./bootstrap/bootstrap.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
   <script src="./bootstrap/bootstrap.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/visualizations.js"></script>

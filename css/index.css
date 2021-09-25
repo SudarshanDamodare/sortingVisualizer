@@ -6,10 +6,9 @@
 
 .navbar{
   background-color: black !important;
-  height: 4rem;
 }
 .navbar-brand{
-  font-size: 2rem !important;
+  font-size: 2.5rem !important;
   margin-right: 5rem !important;
 }
 .nav-item{
@@ -23,16 +22,15 @@
   margin-left: auto;
 }
 
+.nav-item button{
+  margin: auto;
+}
 #array-container{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 70vh;
-}
-
-.hide{
-  display: none;
 }
 
 .nav-link.btn-locked{
