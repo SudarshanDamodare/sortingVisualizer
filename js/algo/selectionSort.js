@@ -1,46 +1,39 @@
-function selectionSort()
-{
-    c_delay=0;
-    let i;
-    for(i=0;i<arr_size-1;i++)
-    {
-        div_update(divs[i],div_sizes[i],"red");//Color update
+function selectionSort() {
+  c_delay = 0;
+  let i;
+  for (i = 0; i < arr_size - 1; i++) {
+    div_update(divs[i], div_sizes[i], "red");
 
-        index_min=i;
+    index_min = i;
 
-        for(let j=i+1;j<arr_size;j++)
-        {
-            div_update(divs[j],div_sizes[j],"yellow");//Color update
+    for (let j = i + 1; j < arr_size; j++) {
+      div_update(divs[j], div_sizes[j], "yellow");
 
-            if(div_sizes[j]<div_sizes[index_min])
-            {
-                if(index_min!=i)
-                {
-                    div_update(divs[index_min],div_sizes[index_min],"blue");//Color update
-                }
-                index_min=j;
-                div_update(divs[index_min],div_sizes[index_min],"red");//Color update
-            }
-            else
-            {
-                div_update(divs[j],div_sizes[j],"blue");//Color update
-            }
+      if (div_sizes[j] < div_sizes[index_min]) {
+        if (index_min != i) {
+          div_update(divs[index_min], div_sizes[index_min], "blue");
         }
-        
-        if(index_min!=i)
-        {
-            let temp=div_sizes[index_min];
-            div_sizes[index_min]=div_sizes[i];
-            div_sizes[i]=temp;
-
-            div_update(divs[index_min],div_sizes[index_min],"red");//Height update
-            div_update(divs[i],div_sizes[i],"red");//Height update
-            div_update(divs[index_min],div_sizes[index_min],"blue");//Color update
-        }
-        div_update(divs[i],div_sizes[i],"green");//Color update
+        index_min = j;
+        div_update(divs[index_min], div_sizes[index_min], "red");
+      }
+      else {
+        div_update(divs[j], div_sizes[j], "blue");
+      }
     }
 
-    div_update(divs[i],div_sizes[i],"green");//Color update
+    if (index_min != i) {
+      let temp = div_sizes[index_min];
+      div_sizes[index_min] = div_sizes[i];
+      div_sizes[i] = temp;
 
-    enable_buttons();
+      div_update(divs[index_min], div_sizes[index_min], "red");
+      div_update(divs[i], div_sizes[i], "red");
+      div_update(divs[index_min], div_sizes[index_min], "blue");
+    }
+    div_update(divs[i], div_sizes[i], "green");
+  }
+
+  div_update(divs[i], div_sizes[i], "green");
+
+  enable_buttons();
 }

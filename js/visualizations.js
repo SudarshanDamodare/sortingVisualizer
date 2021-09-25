@@ -22,9 +22,10 @@ function set_speed(){
 let delay_time=10000/(Math.floor(arr_size/10)*speed);
 let c_delay=0;
 
+
+// this will update the curr division during sorting
 function div_update(arr_cont, height, color){
   window.setTimeout(function(){
     arr_cont.style.cssText+=" margin:0% " + margin_size + "%; width:" + (100/arr_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
   }, c_delay+=delay_time);
 }
-
