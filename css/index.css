@@ -33,7 +33,7 @@
   height: 70vh;
 }
 
-.nav-link.btn-locked{
+.btn-locked{
   cursor: not-allowed !important;
   /* color: red; */
 }
