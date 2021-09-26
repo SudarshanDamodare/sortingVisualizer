@@ -30,21 +30,21 @@ let c_delay=0;
 
 
 // this will update the curr division during sorting
-function div_update(arr_cont, height, color){
-  window.setTimeout(function(){
-    arr_cont.style.cssText+=" margin:0% " + margin_size + "%; width:" + (100/arr_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
+// function div_update(arr_cont, height, color){
+//   window.setTimeout(function(){
+//     arr_cont.style.cssText+=" margin:0% " + margin_size + "%; width:" + (100/arr_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
 
-  }, c_delay+=delay_time);
-}
+//   }, c_delay+=delay_time);
+// }
 
 // this is for green and blue
-async function div_update_test(arr_cont, height, color){
+function div_update(arr_cont, height, color){
   arr_cont.style.cssText+=" margin:0% " + margin_size + "%; width:" + (100/arr_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
-  // await timer(100);
+  // await timer(10);
 }
 
 // this  is for red and yellow
-async function div_update_test1(arr_cont, height, color){
+async function div_update_delay(arr_cont, height, color){
   arr_cont.style.cssText+=" margin:0% " + margin_size + "%; width:" + (100/arr_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
   await timer(delay_time*10);
 }
